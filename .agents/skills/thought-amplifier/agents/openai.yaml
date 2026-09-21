@@ -1,0 +1,9 @@
+interface:
+  display_name: "Thought Amplifier"
+  short_description: "Clear thinking in English or Romanian"
+  icon_small: "./assets/thought-amplifier-avatar.png"
+  icon_large: "./assets/thought-amplifier-avatar.png"
+  brand_color: "#6D5CE7"
+  default_prompt: "Use $thought-amplifier to turn this brain dump into clear decisions and next steps."
+policy:
+  allow_implicit_invocation: true
