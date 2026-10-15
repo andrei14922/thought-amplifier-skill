@@ -1,66 +1,66 @@
-# Claude: install and start
+# Set up Thought Amplifier in Claude
 
-**Current edition: 0.3.0 — Public preview.** [Back to the platform chooser](../README.md#choose-your-edition).
+**Current edition: 0.3.0 — Public preview.** [Choose a different assistant](../README.md#choose-your-edition).
 
-[Download thought-amplifier-claude-v0.3.0.zip](../downloads/claude/v0.3.0/thought-amplifier-claude-v0.3.0.zip?raw=true)
-
-This is the dedicated Claude skill ZIP, not GitHub's **Code > Download ZIP** archive of the entire repository. You do not need the Codex edition.
-
-The public reasoning core and all four public method/language references match the Codex edition. Claude has its own discovery description, setup instructions and guided onboarding. Source and packaging checks passed; fresh Claude behavior, routing and account-upload validation remain pending.
+For everyday conversations at **claude.ai** or in the **Claude desktop app**, including Cowork. You do not need Claude Code or a terminal for this route.
 
 ## Claude web, desktop or Cowork
 
-1. Download the dedicated ZIP above. Keep it zipped for account upload.
-2. Enable **Code execution and file creation** if required in Claude settings. Organization policies may also control skill availability.
-3. Open **Customize > Skills > + > Create skill > Upload a skill**.
-4. Select the ZIP and enable Thought Amplifier.
-5. Start a conversation and send:
+### 1. Download the skill
+
+[![Download for Claude](../assets/download-claude.svg)](../downloads/claude/v0.3.0/thought-amplifier-claude-v0.3.0.zip?raw=true)
+
+Your browser saves `thought-amplifier-claude-v0.3.0.zip`, usually in **Downloads**. Keep it zipped. Use this button rather than GitHub's **Code > Download ZIP**, which contains the whole repository.
+
+### 2. Upload it in Claude
+
+Open Claude and go to **Customize → Skills → + → Create skill → Upload a skill**. Select the ZIP from Downloads, then enable Thought Amplifier in your skills list.
+
+If Skills is missing, check **Settings → Capabilities → Code execution and file creation**. Your organization may control availability. Menu labels can vary; [Claude's current upload instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude) show the supported route. Attaching the ZIP to an ordinary chat does not install an account skill.
+
+### 3. Start using it
+
+Start a conversation and send:
 
 ```text
 Use Thought Amplifier. ONBOARD THOUGHT AMPLIFIER.
 ```
 
-Then try:
+Then bring a real thought:
 
 ```text
-Use Thought Amplifier. Amplify this thought: [paste whatever is in your head]
+Use Thought Amplifier. Amplify this thought: I have too many projects and need to choose what to do this week.
 ```
 
-An ordinary chat attachment alone is not a reusable account installation. If an older Thought Amplifier is present, preserve it and use Claude's available replace/remove controls; avoid leaving multiple versions enabled under the same name.
+You are ready when Thought Amplifier appears enabled in Skills and you can use it in a conversation.
 
-Menu labels and availability can change. [Official Claude setup instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
+## Which Claude do I use
+
+**Claude** is Anthropic's assistant. You can use it in several interfaces:
+
+| What you use | Which setup to choose |
+| --- | --- |
+| Conversations at claude.ai or in the Claude desktop app | Use the three upload steps above. |
+| Cowork for tasks involving files and tools | Use the same account skill upload. Some accounts now combine chat and Cowork into one conversation experience. |
+| The **Code** tab in the Claude desktop app, or Claude Code in a terminal/code editor | Follow the [Claude Code guide](CLAUDE-CODE.md). |
+
+Claude Code is a coding and project-work interface that can work with files and run tools. **It has a graphical desktop interface; a command line is optional.** It uses Claude, but its local skill setup differs from uploading a skill to your Claude account. [Official desktop guide](https://code.claude.com/docs/en/desktop-quickstart). [Chat and Cowork interface changes](https://support.claude.com/en/articles/16761823-claude-cowork-and-chat-are-one-claude).
+
+You do not need to install both routes. On supported recent Claude Code versions, account skills can also sync when you sign in with the same Claude account. If Thought Amplifier already appears there, avoid installing a second copy with the same name.
 
 ## Claude Code
 
-Use the same download, but unzip it. Copy the enclosed `thought-amplifier` folder to one chosen scope:
+[Open the separate Claude Code setup guide](CLAUDE-CODE.md) for its three steps and manual alternative.
 
-- **Personal:** `~/.claude/skills/thought-amplifier` for local projects.
-- **Project:** `.claude/skills/thought-amplifier` inside the intended project.
+## If something goes wrong
 
-The repository also contains the same source folder at [.claude/skills/thought-amplifier](../.claude/skills/thought-amplifier). Copy the whole folder, not just SKILL.md. Preserve a differing installed version before replacement.
+- **No ZIP in Downloads:** open your browser's downloads list and look for `thought-amplifier-claude-v0.3.0.zip`.
+- **Upload rejects the file:** check you selected the dedicated skill ZIP, not the whole repository archive or an extracted folder.
+- **Claude is not using it:** confirm the skill is enabled, then explicitly say `Use Thought Amplifier`.
+- **You already have an older version:** preserve it before replacing it and avoid leaving duplicate versions enabled.
 
-Open a fresh Claude Code session in the intended scope and send:
+## Version and validation
 
-```text
-/thought-amplifier ONBOARD THOUGHT AMPLIFIER
-```
+The public thinking core and four references match the Codex edition. Packaging checks passed; fresh Claude behavior and account-upload tests remain pending. This is a **public preview**, not a claim of identical results across models. [Version and checksum](RELEASES.md#claude-030--public-preview).
 
-Then:
-
-```text
-/thought-amplifier Amplify this thought: [your situation]
-```
-
-If the wrong version runs, check for another personal, project or account-synced skill with the same name. [Official Claude Code skill documentation](https://code.claude.com/docs/en/skills).
-
-## Confirm it works for you
-
-Try a messy decision, a Romanian request, and `Teach me opportunity cost, then ask one question and wait.` Expect useful structure, natural language and an actual knowledge check. For precise or tiny tasks, the skill should not add an unnecessary framework. These are user smoke checks, not a promise of benchmarked results.
-
-You can ask for `NEXT STEP ONLY`, `Questions first`, `No questions` or a specific output format. See the [capability examples](../README.md#what-it-helps-you-do).
-
-## Version, integrity and rollback
-
-The filename identifies the version. [Release information and checksum](RELEASES.md#claude-030--public-preview) identify the exact archive. Compare the SHA-256 if you need to verify a transferred copy.
-
-Disable/remove the skill in Claude settings to stop account use. For a local Claude Code installation, confirm the exact folder before removing it and restore your preserved version to roll back. Do not remove other skills. [Instructions inside the package](../.claude/skills/thought-amplifier/INSTALL-AND-ONBOARD.md) cover the same process.
+To stop using it, disable or remove it through Claude's Skills controls. [Examples and conversation controls](../README.md#what-it-helps-you-do).

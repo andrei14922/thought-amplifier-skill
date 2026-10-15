@@ -1,28 +1,43 @@
 # Thought Amplifier / Amplificatorul de gânduri
 
+**Bring the raw thought. Leave with a clearer question, useful options and a concrete next move.**
+
+## Choose your edition
+
+**Start here. Choose the assistant you already use.** No coding or GitHub account is needed to download the skill or follow the recommended setup. You do need access to your chosen AI app.
+
+[![Set up for Codex](assets/start-codex.svg)](docs/CODEX.md)
+
+For the **OpenAI Codex app**, or Codex in a terminal or code editor. Opens three steps with a message you can copy into Codex. [Manual setup is also available](docs/CODEX.md#manual-installation).
+
+[![Set up for Claude Code](assets/start-claude-code.svg)](docs/CLAUDE-CODE.md)
+
+For the **Code tab in the Claude desktop app**, or Claude Code in a terminal or code editor. Opens three steps with a message you can copy into Claude Code.
+
+[![Download for Claude](assets/download-claude.svg)](downloads/claude/v0.3.0/thought-amplifier-claude-v0.3.0.zip?raw=true)
+
+For **everyday Claude conversations at claude.ai or in the Claude desktop app**, including Cowork. Downloads the ready-to-upload ZIP. **Next: [follow these three upload steps](docs/CLAUDE.md#claude-web-desktop-or-cowork).** Keep the file zipped.
+
+**Not sure which Claude you use?** If you normally open Claude and start chatting, choose **Download for Claude**. If you deliberately open the **Code** tab or use the `claude` terminal command, choose **Set up for Claude Code**. These are different ways to use Claude, not two Thought Amplifier products. The same Claude skill supports both; the setup differs. [See the interface explanation](docs/CLAUDE.md#which-claude-do-i-use).
+
+The setup buttons open instructions. The download button saves a file. **Downloading alone does not install the skill.** You do not need GitHub's green **Code** menu for the recommended routes above.
+
+| Edition | Current version | What you are getting |
+| --- | --- | --- |
+| Codex | **0.1.0** | Existing public skill; unchanged |
+| Claude and Claude Code | **0.3.0 — Public preview** | Same public thinking core; fresh Claude behavior and account-upload tests pending |
+
+[Version history and checksums](docs/RELEASES.md). Version numbers are independent between platforms. Download a new version when you want to update; a local installation does not automatically follow changes to this repository.
+
+**Free skill, MIT license.** There is no separate Thought Amplifier fee. Your AI provider's account requirements, usage limits and charges still apply. Thought Amplifier adds instructions to your existing assistant; it is not a separate application. A Custom GPT is a separate way to use an assistant, not something this repository installs.
+
 ![Scattered thoughts become structured decision cards and a clear path forward](assets/thought-amplifier-social-preview.png)
 
-**Bring the raw thought. Leave with a clearer question, useful options and a concrete next move.**
+## What it helps you do
 
 Thought Amplifier is a practical thinking skill for **Codex and Claude**, in **English and Romanian**. Bring an idea, question, decision, plan, rough prompt, stuck problem or messy brain dump. You do not need to organize it first.
 
 It is designed to challenge weak assumptions respectfully, organize information without flattening creativity, and help you decide what to do next. It is a thinking partner, not a motivation bot or a yes-man. Results still depend on the model, the context you supply and your judgment.
-
-## Choose your edition
-
-Install **only the edition for your assistant**. These are separate packages with the same public thinking core.
-
-| Your assistant | Current version | Start here | Status |
-| --- | --- | --- | --- |
-| **Codex** | **0.1.0** | [Codex installation and first use](docs/CODEX.md) | Existing public edition; skill and installers unchanged |
-| **Claude web, desktop or Cowork** | **0.3.0** | [Download the Claude ZIP](downloads/claude/v0.3.0/thought-amplifier-claude-v0.3.0.zip?raw=true), then [follow the upload steps](docs/CLAUDE.md) | **Public preview**; fresh Claude behavior and account-upload tests pending |
-| **Claude Code** | **0.3.0** | [Claude Code installation](docs/CLAUDE.md#claude-code) | Same Claude preview package |
-
-Use this table for the current edition. [Version history, checksums and validation status](docs/RELEASES.md) explain exactly what you are getting. Version numbers are independent between platforms: Claude 0.3.0 does not replace Codex 0.1.0.
-
-**Free skill, MIT license.** There is no separate Thought Amplifier fee. Your AI provider's account requirements, usage limits and charges still apply. These are installable skills; a Custom GPT is a separate way to use an assistant, not something this repository installs.
-
-## What it helps you do
 
 | Bring this | Get help with | Try this |
 | --- | --- | --- |
