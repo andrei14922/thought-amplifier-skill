@@ -1,134 +1,117 @@
 # Thought Amplifier / Amplificatorul de gânduri
 
-![Thought Amplifier turns scattered thoughts into structured decision cards and a clear path forward](assets/thought-amplifier-social-preview.png)
+![Scattered thoughts become structured decision cards and a clear path forward](assets/thought-amplifier-social-preview.png)
 
-Turn brain dumps, vague questions, overloaded decisions, stuck plans, and rough prompts into clearer thinking and practical next steps.
+**Bring the raw thought. Leave with a clearer question, useful options and a concrete next move.**
 
-This repository contains one bilingual Codex/ChatGPT skill. It automatically mirrors English or Romanian, and users can override the language at any time.
+Thought Amplifier is a practical thinking skill for **Codex and Claude**, in **English and Romanian**. Bring an idea, question, decision, plan, rough prompt, stuck problem or messy brain dump. You do not need to organize it first.
 
-## What it does
+It is designed to challenge weak assumptions respectfully, organize information without flattening creativity, and help you decide what to do next. It is a thinking partner, not a motivation bot or a yes-man. Results still depend on the model, the context you supply and your judgment.
 
-- clarifies the real question;
-- separates facts, assumptions, unknowns, and competing interpretations;
-- compares options and recommends a next move;
-- turns brain dumps into an organized plan;
-- pressure-tests ideas without being hostile;
-- improves prompts, specifications, and repeatable workflows;
-- helps users learn through explanation and practice.
+## Choose your edition
 
-The package adds no separate account, API key, external service, MCP server, or telemetry.
+Install **only the edition for your assistant**. These are separate packages with the same public thinking core.
 
-## Install
+| Your assistant | Current version | Start here | Status |
+| --- | --- | --- | --- |
+| **Codex** | **0.1.0** | [Codex installation and first use](docs/CODEX.md) | Existing public edition; skill and installers unchanged |
+| **Claude web, desktop or Cowork** | **0.3.0** | [Download the Claude ZIP](downloads/claude/v0.3.0/thought-amplifier-claude-v0.3.0.zip?raw=true), then [follow the upload steps](docs/CLAUDE.md) | **Public preview**; fresh Claude behavior and account-upload tests pending |
+| **Claude Code** | **0.3.0** | [Claude Code installation](docs/CLAUDE.md#claude-code) | Same Claude preview package |
 
-### Codex — fastest
+Use this table for the current edition. [Version history, checksums and validation status](docs/RELEASES.md) explain exactly what you are getting. Version numbers are independent between platforms: Claude 0.3.0 does not replace Codex 0.1.0.
 
-Open Codex, paste this, and approve the normal local skill installation:
+**Free skill, MIT license.** There is no separate Thought Amplifier fee. Your AI provider's account requirements, usage limits and charges still apply. These are installable skills; a Custom GPT is a separate way to use an assistant, not something this repository installs.
 
-```text
-$skill-installer Install the skill from https://github.com/andrei14922/thought-amplifier-skill/tree/main/.agents/skills/thought-amplifier
-```
+## What it helps you do
 
-Then start a new conversation and use:
+| Bring this | Get help with | Try this |
+| --- | --- | --- |
+| A tangled thought | A clearer question, relevant facts and unknowns | `Amplify this thought: [paste whatever is in your head]` |
+| A difficult choice | Sharper options, tradeoffs and a conditional recommendation | `COMPARE OPTIONS: [A and B]. Here is what matters to me: [...]` |
+| A rough prompt | A stronger prompt with inputs, output format and checks | `PROMPT ARCHITECT: Improve this request for [audience/tool]: [...]` |
+| An ambitious goal | A workable plan, dependencies and the first unblocker | `TURN INTO PLAN: [goal, deadline and constraints]` |
+| A brainstorming topic | Varied ideas, useful groupings and a next experiment | `BRAINSTORM THIS: [topic]. Give me distinct approaches, then shortlist.` |
+| A favorite idea | Respectful challenge, weak assumptions and disconfirming evidence | `PRESSURE TEST: [idea]. What would change the recommendation?` |
+| Too many commitments | A clearer priority and explicit tradeoffs | `I have [projects], [time] and [deadlines]. Help me choose what comes first.` |
+| A recurring problem | Competing explanations and a small diagnostic test | `Help me diagnose why [problem] keeps happening. Here is the evidence: [...]` |
+| Mixed notes or documents | An organized inventory, contradictions, duplicates and supported totals | `Organize these records. Separate facts from assumptions and flag missing information.` |
+| Something to learn | Explanation, examples, recall practice and a knowledge check | `Teach me [topic], then ask one question to check my understanding.` |
 
-```text
-$thought-amplifier Help me turn this brain dump into a clear decision and next steps: [paste anything]
-```
+These are supported workflows, not promises of perfect decisions or verified facts. The assistant should say when evidence is incomplete.
 
-The skill includes a display name, icon, default prompt, and automatic English/Romanian behavior. It appears as a skill inside supported Codex/ChatGPT clients; it is not a separate desktop application with its own window.
+## Your first conversation
 
-### Windows — easiest
+After installation, explicitly select the skill once:
 
-Download or clone this repository, open PowerShell in its folder, and run:
-
-```powershell
-.\install.ps1
-```
-
-The installer copies the skill to:
-
-```text
-%USERPROFILE%\.agents\skills\thought-amplifier
-```
-
-If an older copy exists, it is preserved in a timestamped backup beside the installed skill.
-
-### macOS or Linux
-
-```bash
-./install.sh
-```
-
-### Manual installation
-
-Copy this folder:
+**Codex**
 
 ```text
-.agents/skills/thought-amplifier
+$thought-amplifier Amplify this thought: [paste whatever is in your head]
 ```
 
-to:
+**Claude Code**
 
 ```text
-~/.agents/skills/thought-amplifier
+/thought-amplifier Amplify this thought: [paste whatever is in your head]
 ```
 
-Restart or open a new Codex/ChatGPT session if the skill does not appear immediately.
-
-## Use
-
-Invoke the skill explicitly:
+**Claude web, desktop or Cowork**, with the skill enabled:
 
 ```text
-$thought-amplifier I have too many projects and cannot tell what to do first.
+Use Thought Amplifier. Amplify this thought: [paste whatever is in your head]
 ```
 
-Or use one of the natural controls:
+“Amplify this thought” is a natural request, not a special command you must memorize. Ordinary requests also work. Explicitly naming the skill helps when automatic selection misses it.
+
+For a guided introduction in Claude, send `Use Thought Amplifier. ONBOARD THOUGHT AMPLIFIER.` In Codex, ask `$thought-amplifier Explain what you do and show me three examples.`
+
+### A small example
+
+> I want to launch a newsletter, build an app and take a course. I have five hours a week, and the newsletter draft is due Friday. Amplify this thought.
+
+A useful response would clarify what matters this week, separate the deadline from optional ambitions, recommend a feasible priority, explain what to defer, and name one next action. It should not simply tell you to work harder. This is an illustration of the intended workflow, not a benchmark result.
+
+### In Romanian
 
 ```text
-BRAIN DUMP: [paste everything]
-ANALYZE & RECOMMEND: [situation]
-COMPARE OPTIONS: [A vs B]
-PRESSURE TEST: [idea]
-TURN INTO PLAN: [rough goal]
-PROMPT ARCHITECT: [rough request]
-NEXT STEP ONLY: [situation]
+Folosește Thought Amplifier. SCRIE TOT CE AI ÎN MINTE:
+Am prea multe proiecte și doar cinci ore disponibile săptămâna aceasta.
+Ajută-mă să aleg ce fac mai întâi și ce amân.
 ```
 
-Romanian examples:
+Both editions follow the language of your request. Override it with `Language: English`, `Language: Română` or `Language: Auto`.
 
-```text
-$thought-amplifier Nu mai știu ce să prioritizez. Ajută-mă să pun ordine.
-SCRIE TOT CE AI ÎN MINTE: [lipește ideile]
-ANALIZEAZĂ ȘI RECOMANDĂ: [situația]
-COMPARĂ OPȚIUNILE: [A și B]
-TRANSFORMĂ ÎN PLAN: [obiectiv]
-```
+## Control the conversation
 
-## Language
+- **Only one action:** `NEXT STEP ONLY` / `DOAR URMĂTORUL PAS`.
+- **Clarify first:** `Questions first`.
+- **Proceed with assumptions:** `No questions`.
+- **Choose depth:** `Depth: 30s | 1-minute | normal | deep`.
+- **Choose challenge level:** `Strictness: gentle | balanced | ruthless`.
+- **Lock the format:** `Output only: <format>` or `Output sections EXACTLY: <headings>`.
+- **Keep it offline:** `No browsing` or `Offline`.
+- **Keep a continuation note:** `SUMMARIZE FOR LATER` / `REZUMĂ PENTRU MAI TÂRZIU`.
+- **Make a repeatable process:** `MAKE THIS REUSABLE` / `FĂ ASTA REUTILIZABIL`.
 
-The default is `Language: Auto`: the answer follows the user's language. Override it with:
+## What to expect—and what not to assume
 
-```text
-Language: English
-Language: Română
-Language: Auto
-```
+- The skill separates facts, interpretations, assumptions and unknowns. It does not make unsupported information true.
+- It should challenge an idea respectfully without attacking you or burying a small question in a framework.
+- It can help reason about important decisions, but it does not replace qualified professional judgment.
+- It does not create permanent memory, grant account access or authorize messages, installations or publication.
+- The skill packages contain no connectors, telemetry or executable scripts. The repository's optional Codex installers only copy the Codex skill locally; maintainer tests validate packages.
+- Your conversations are handled by the host application's privacy and retention settings.
+- Claude **0.3.0 is a public preview**. Its public-source parity and static packaging checks passed; fresh Claude behavior, automatic routing and account upload remain unverified. Equal performance across hosts is not claimed.
 
-There is no separate Romanian installation and no setup wizard to maintain. One installation supports both languages.
+## Feedback
 
-## Privacy
+Tell us what felt useful, generic, confusing or missing. Include the platform, skill version, a non-sensitive example prompt and what you expected. Do not post private documents, passwords or account details. [Open a GitHub issue](https://github.com/andrei14922/thought-amplifier-skill/issues).
 
-This repository contains the skill, its supporting references, UI metadata, installers, tests, licence, and media assets. It contains no credentials, personal data, local machine paths, bundled connectors, or telemetry code.
+## Source and license
 
-The skill includes no network or storage code. Material pasted into a conversation is handled by the host application under that application's privacy and retention settings.
+- [Codex skill source](.agents/skills/thought-amplifier/SKILL.md)
+- [Claude skill source](.claude/skills/thought-amplifier/SKILL.md)
+- [Versions and validation](docs/RELEASES.md)
+- [MIT license](LICENSE.md)
 
-## Licence
-
-Released under the MIT License. See [LICENSE.md](LICENSE.md).
-
-## Media
-
-- Repository hero: `assets/thought-amplifier-social-preview.png`
-- GitHub social preview: `assets/thought-amplifier-github-social-preview.jpg` (1280×640, under 1 MB)
-- Public profile/avatar export: `assets/thought-amplifier-github-avatar.jpg` (512×512, under 1 MB)
-- Lossless avatar source: `assets/thought-amplifier-avatar.png`
+The Claude edition preserves the public Codex core and four public references, with Claude-specific discovery metadata and onboarding. Neither distribution includes a private operating-system skill or personal memory.

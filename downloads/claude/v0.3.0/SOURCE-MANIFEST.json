@@ -1,0 +1,33 @@
+{
+  "release": "0.3.0",
+  "date": "2026-10-15",
+  "source_repository": "https://github.com/andrei14922/thought-amplifier-skill",
+  "source_commit": "c23c89efe86def98338d38b25f9612ece5d9eeaa",
+  "source_skill_sha256": "a8bbbb8fa03f4eda2cc5b27740587e5456bdca3869bdd2d3d20240fcf2e0969d",
+  "public_body_sha256_normalized": "f7e5f92699ebf6eacf743c50eff2b0e659c31763b8cbe08799e9aa646e2e3e88",
+  "public_references": {
+    "continuity-and-reuse.md": "bb9f59140da1550f715527de211c014caad2d42cdc76a8c9b4d366c75f41f876",
+    "learning-and-practice.md": "29945f549f41c307ea01b7f954271b3541c401ad6ac4fae1a05697e40f774145",
+    "romanian-guide.md": "29f0e84b9b8bd3e785588f23ccabe7c705ec256bc73e00cb9c5a56a6bd1e9c4a",
+    "thinking-methods.md": "e2be265f410f59119cbc7dba79f05d2f6a4e4bea0073e609105ba874ac83df23"
+  },
+  "license_sha256": "c63502f291324ae04f2643a6326f7ae5a1cf8963f5ec71284686e0d1eda8e4b7",
+  "release_files": {
+    "INSTALL-AND-ONBOARD.md": "42d1c9b902b2f7c217a35ccb04bf9028dda844f736c98ac88daa273640ccd2c8",
+    "LICENSE.md": "c63502f291324ae04f2643a6326f7ae5a1cf8963f5ec71284686e0d1eda8e4b7",
+    "references/continuity-and-reuse.md": "bb9f59140da1550f715527de211c014caad2d42cdc76a8c9b4d366c75f41f876",
+    "references/learning-and-practice.md": "29945f549f41c307ea01b7f954271b3541c401ad6ac4fae1a05697e40f774145",
+    "references/ONBOARDING.md": "4620e657ebc123765b8733570163906b3eca4323827a27c4d18bd0a9c067e648",
+    "references/romanian-guide.md": "29f0e84b9b8bd3e785588f23ccabe7c705ec256bc73e00cb9c5a56a6bd1e9c4a",
+    "references/thinking-methods.md": "e2be265f410f59119cbc7dba79f05d2f6a4e4bea0073e609105ba874ac83df23",
+    "SKILL.md": "ddc52417e021d4e34bff5353b9d6f3677e61a8b0932a24d621be0dd38e448dd9"
+  },
+  "adaptation": [
+    "Shorter Claude discovery description",
+    "Public core retained verbatim after newline normalization",
+    "Four public references copied byte-for-byte",
+    "Claude-only onboarding, setup and runtime boundary section"
+  ],
+  "status": "public-preview",
+  "fresh_claude_behavior": "not-yet-validated"
+}

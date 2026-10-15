@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "codex": {
+    "version": "0.1.0",
+    "status": "existing-public-edition",
+    "source": ".agents/skills/thought-amplifier",
+    "install": "docs/CODEX.md",
+    "files": {
+      "agents/openai.yaml": "252daeacf7680f7dcfb7d490eab1a6f0360a2ed2a78b3c29783d1e72fa225d41",
+      "assets/thought-amplifier-avatar.png": "cfe9540d99a61d6d9ebb3a886ce136d3e515281d7d50998beb22493202f11e19",
+      "references/continuity-and-reuse.md": "bb9f59140da1550f715527de211c014caad2d42cdc76a8c9b4d366c75f41f876",
+      "references/learning-and-practice.md": "29945f549f41c307ea01b7f954271b3541c401ad6ac4fae1a05697e40f774145",
+      "references/romanian-guide.md": "29f0e84b9b8bd3e785588f23ccabe7c705ec256bc73e00cb9c5a56a6bd1e9c4a",
+      "references/thinking-methods.md": "e2be265f410f59119cbc7dba79f05d2f6a4e4bea0073e609105ba874ac83df23",
+      "SKILL.md": "a8bbbb8fa03f4eda2cc5b27740587e5456bdca3869bdd2d3d20240fcf2e0969d"
+    }
+  },
+  "claude": {
+    "version": "0.3.0",
+    "status": "public-preview",
+    "source": ".claude/skills/thought-amplifier",
+    "install": "docs/CLAUDE.md",
+    "download": "downloads/claude/v0.3.0/thought-amplifier-claude-v0.3.0.zip",
+    "sha256": "e1d7e917ea609e8da8054f6b06acd99f8840dda56146399031da5b8c15ff0831",
+    "manifest": "downloads/claude/v0.3.0/SOURCE-MANIFEST.json"
+  }
+}
